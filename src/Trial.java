@@ -31,6 +31,19 @@ public class Trial {
 			}	
 		}
 	}
+	
+	public boolean checkSum(int desiredSum) {
+		boolean success = true;
+		int sum = 0;
+		
+		for(int i = 0; i < playerHand.size(); i++) 
+			sum += playerHand.get(i).getValue();
+		
+		if(desiredSum == sum)
+			return success = true;
+		else return success = false;
+		
+	}
 
 
 }
