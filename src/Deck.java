@@ -21,7 +21,6 @@ public class Deck {
 				
 		for (int i = 1; i <= 4; i++) // Suit
 		{
-			System.out.println("inside loop yo");
 			for (int j = 1; j <= 13; j++) // Face cards
 			{
 				if (i == 1) // Clubs

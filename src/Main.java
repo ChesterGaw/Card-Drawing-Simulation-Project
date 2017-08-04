@@ -28,6 +28,7 @@ public class Main {
 		System.out.println("Please enter number of trials: ");
 		numOfTrials = sc.nextInt();
 		
+		
 		for(int i = 0; i < numOfTrials; i++) {
 			trialsReplace.add(new Trial());
 			trialsReplace.get(i).drawCards(numOfCards, true);
@@ -38,17 +39,6 @@ public class Main {
 			trialsNoReplace.get(i).drawCards(numOfCards, false);
 			if(trialsNoReplace.get(i).checkSum(desiredSum) == true)
 				numberOfSuccessNoReplace++;
-			
-			System.out.println("Trial " + (i + 1));
-			trialsReplace.get(i).printPlayerHand();
-		}
-		
-//		int x = sc.nextInt();
-//		int size = sc.nextInt();
-//		float prob = sc.nextFloat();
-//		
-//		double result = R.dbinom(x, size, prob);
-//		System.out.println("Answer: " + result);
-		
+		}	
 	}
 }
