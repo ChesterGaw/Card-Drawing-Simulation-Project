@@ -1,28 +1,29 @@
 
 public class Card {
-	private int suit;
-	private int count;
+	private String suit;
+	private int value;
 	
-	public Card(int suit, int count) {
-		suit = this.suit;
-		count = this.count;
+	public int getValue() {
+		return value;
 	}
 
-	public int getSuit() {
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+	public Card(String suit, int count) {
+		suit = this.suit;
+		count = this.value;
+	}
+
+	public String getSuit() {
 		return suit;
 	}
 
-	public void setSuit(int suit) {
+	public void setSuit(String suit) {
 		this.suit = suit;
 	}
 
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
 	
 	
 	
