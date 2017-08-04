@@ -3,9 +3,9 @@ public class Card {
 	private String suit;
 	private int value;
 	
-	public Card(String suit, int count) {
-		suit = this.suit;
-		count = this.value;
+	public Card(String suit, int value) {
+		this.suit = suit;
+		this.value = value;
 	}
 	
 	public int getValue() {

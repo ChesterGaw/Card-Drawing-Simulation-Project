@@ -18,9 +18,10 @@ public class Deck {
 	}
 	
 	public void initializeDeck() {
-		
+				
 		for (int i = 1; i <= 4; i++) // Suit
 		{
+			System.out.println("inside loop yo");
 			for (int j = 1; j <= 13; j++) // Face cards
 			{
 				if (i == 1) // Clubs
@@ -31,7 +32,9 @@ public class Deck {
 			    	cardList.add(new Card("Hearts",j));
 				else if (i == 4) // Diamonds 
 			    	cardList.add(new Card("Diamonds",j));
+				
 			}
+		
 		} 
 	}
 	
