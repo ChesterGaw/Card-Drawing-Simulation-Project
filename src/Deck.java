@@ -33,32 +33,4 @@ public class Deck {
 		} 
 	}
 	
-	public ArrayList<Card> drawCards (int drawCount, boolean withReplacement) {
-		ArrayList<Card> drawnCards = new ArrayList<Card>();
-		Random rand = new Random();
-		int n;
-		
-		for (int i = 0; i < drawCount; i++) 
-		{
-			if (withReplacement == true) 
-			{
-				n = rand.nextInt(cardList.size());
-
-				drawnCards.add(cardList.get(n));
-			} else {
-				
-				n  = rand.nextInt(cardList.size());
-				
-				drawnCards.add(cardList.get(n));
-				cardList.remove(n);
-			}
-				
-			
-		}
-		
-		
-		
-		return drawnCards;
-	}
-
 }
