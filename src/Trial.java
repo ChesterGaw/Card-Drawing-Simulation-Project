@@ -7,6 +7,7 @@ public class Trial {
 	private ArrayList<Card> playerHand;
 	
 	public Trial() {
+		playerDeck = new Deck();
 		playerDeck.initializeDeck();
 		playerHand = new ArrayList<Card>();
 	}
@@ -33,16 +34,22 @@ public class Trial {
 	}
 	
 	public boolean checkSum(int desiredSum) {
-		boolean success = true;
+		
 		int sum = 0;
 		
 		for(int i = 0; i < playerHand.size(); i++) 
 			sum += playerHand.get(i).getValue();
 		
 		if(desiredSum == sum)
-			return success = true;
-		else return success = false;
+			return true;
+		else return false;
 		
+	}
+	
+	public void printPlayerHand(){
+		for(int i = 0; i < playerHand.size();i++) {
+			System.out.println(playerHand.get(i).getSuit() + " " + playerHand.get(i).getValue()); 
+		}
 	}
 
 

@@ -4,6 +4,10 @@ import java.util.Random;
 public class Deck {
 	
 	private ArrayList<Card> cardList;
+	
+	public Deck() {
+		cardList = new ArrayList<Card>();
+	}
 
 	public ArrayList<Card> getCardList() {
 		return cardList;
@@ -14,8 +18,6 @@ public class Deck {
 	}
 	
 	public void initializeDeck() {
-		
-		cardList = new ArrayList<Card>();
 		
 		for (int i = 1; i <= 4; i++) // Suit
 		{
